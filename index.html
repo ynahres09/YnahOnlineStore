@@ -1,286 +1,252 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Online Store</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/logo.png" type="image/x-icon">
-    <style>
-        body{
-            background-attachment: fixed;
-            background-image: url(images/background.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        
-    </style>
 </head>
-<style>
-    body{
-        font-family: arial, sans-serif;
-    }
-    .company-name {
-            color: yellow;
-            font-size: 2em;
-        }
-        .history {
-            margin-top: 20px;
-        }
-</style>
-<header style="margin: 15;">
-    <div class="company-name">
-    <h1 style="text-align: center;"><img src="images/logo.png" alt="Shop Logo" height="50">YNARE'S perfume shop<img src="images/logo.png"Shop Logo" height="50"></h1>
-    </div>
-    <div id="top">
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About Us</a>
-            <a href="#products">Products</a>
-            <a href="#promos">Promos</a>
-            <a href="#contact">Contact Us</a>
-        </nav>
-    </div>
-    <hr>
-</header>
-<main style="margin: 10; color: yellow;">
-    <br>
-    <style></style>
-    <article id="about">
-        <h2 style="text-align: center;">About Us</h2>
-        <section>
-            <h3>&nbsp;Company History</h3>
-            <figure>
-                <p>Sure, here’s a sample nickname for Ynah G. Salvana: “YNAREScent”. This nickname combines the initials of the owner’s name with the word “scent”, reflecting the perfume industry she is involved in. Remember, a nickname should be personal and meaningful to the individual. It’s always best to ask for their preference or consent when creating one.</p>
-            </figure>
-        </section>
-        <section>
-            <h3 style="text-align: center;">&nbsp;Company Logo</h3>
-            <figure style="text-align: center;">
-                <img src="images/logo.png" alt="Company Logo" height="250">
-                <figcaption><b>My Official Shop Logo</b></figcaption>
-                <p style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;Ynare’s Perfume Shop, established in the heart of Paris, has been “Magnetizing Moments” for over a century. Founded in 1920 by the visionary perfumer, Ynare, the brand is synonymous with luxury and elegance. The iconic logo, featuring a golden hibiscus flower, epitomizes the essence of beauty and allure that each fragrance encapsulates. Over the years, Ynare’s has curated an exquisite range of perfumes crafted from the finest ingredients sourced globally. Each scent tells a story of timeless romance, wild adventures or serene landscapes. The brand’s unwavering commitment to quality and innovation has cemented its reputation among connoisseurs of fine fragrances worldwide. Today, as we step into our centennial year, Ynare’s continues to be a beacon of sophistication and refinement in the world of perfumery.</p>
-            </figure>
-        </section>
-        <section>
-            <h3 style="text-align: center;">&nbsp;Owner</h3>
-            <figure style="text-align: center;">
-                <img src="images/owner.jpg" alt="Owner Picture" width="200">
-                <figcaption><b>Ynah G. Salvana</b></figcaption>
-                <p style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;The visionary perfumer, Ynare, established Ynare’s Perfume Shop in the heart of Paris in 1920. The golden hibiscus flower in the logo is a testament to Ynare’s love for beauty and allure, which is encapsulated in each fragrance. Ynare’s passion for perfumery led to the curation of an exquisite range of perfumes crafted from the finest ingredients sourced globally. Each scent tells a story, be it of timeless romance, wild adventures, or serene landscapes. Ynare’s unwavering commitment to quality and innovation has cemented the brand’s reputation among connoisseurs of fine fragrances worldwide. As the company steps into its centennial year, Ynare’s legacy continues to be a beacon of sophistication and refinement in the world of perfumery. This is a testament to Ynare’s vision and dedication to the art of perfumery.</p>
-            </figure>
-        </section>
-    </article>
-    <hr>
-    <style>
-        #categorydiv {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            text-align: center;
-        }
-        #category {
-            width: 100%;
-        }
-    </style>
-    <article id="products" style="text-align: center;">
+<body>
+    <header id="top">
         <br>
-        <h2>PRODUCTS</h2>
-        <div id="categorydiv" style="text-align: center;" st>
-            <section id="category" style="background-color: #1e81b0;">
-                <h3>Skin Care Products</h3>
-                <hr>
+        <h1>YNARE'S perfume shop</h1>
+            <nav>
+            <div class="topnav" id="logo"><img src="images/logo.png" alt="Shop Logo" height="30"></div>
+                <ul>
+                    <li><a href="#index.html">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#promos">Promos</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main style="text-align: center;">
+        <br>
+        <article id="about">
+            <h2>About Us</h2>
+            <section id="companyhistory">
+                <h3>&nbsp;Company History</h3>
                 <figure>
-                    <img src="images/1.jpg" alt="Set 1" height="100">
-                    <figcaption>Dior Sauvage Eau De Parfum</figcaption>
-                    <p style="font-size: small;">Price ₱ 1,687.00 - 14,000.00</p>
-                    <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
-                    <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
-                        <span class="text">Add to Cart</span>
-                    </button>
-                </figure>
-                <br>
-                <figure>
-                    <img src="images/2.jpg" alt="Set 2" height="100">
-                    <figcaption>Versace Bright Crystal</figcaption>
-                    <p style="font-size: small;">Price ₱ 341.52 - 10,453.11</p>
-                    <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
-                    <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
-                        <span class="text">Add to Cart</span>
-                    </button>
-                </figure>
-                <br>
-                <figure>
-                    <img src="images/3.jpg" alt="Set 3" height="100">
-                    <figcaption>Dolce & Gabbana Light Blue Intense Eau De Parfum</figcaption>
-                    <p style="font-size: small;">Price ₱ 650.00 - 8,000.00</p>
-                    <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
-                    <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
-                        <span class="text">Add to Cart</span>
-                    </button>
-                </figure>
-                <br>
-                <figure>
-                    <img src="images/4.jpg" alt="Set 4" height="100">
-                    <figcaption>Victoria's Secret Bombshell Eau de Parfum</figcaption>
-                    <p style="font-size: small;">Price ₱ 192.03 - 16,964.00</p>
-                    <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
-                    <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
-                        <span class="text">Add to Cart</span>
-                    </button>
-                </figure>
-                <br>
-                <figure>
-                    <img src="images/5.jpg" alt="Set 5" height="100">
-                    <figcaption>Chanel Allure Homme Sport</figcaption>
-                    <p style="font-size: small;">Price ₱ 114.00 - 17,528.00</p>
-                    <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
-                    <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
-                        <span class="text">Add to Cart</span>
-                    </button>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;“YNAREScent”. This nickname combines the initials of the owner’s name with the word “scent”, reflecting the perfume industry she is involved in. Remember, a nickname should be personal and meaningful to the individual. It’s always best to ask for their preference or consent when creating one.</p>
                 </figure>
             </section>
-
-            <section id="category" style="background-color: #e28743;">
-                <h3>Hair Care Products</h3>
-                <hr>
-                <figure>
-                    <img src="images/6.jpg" alt="Set 6" height="100">
-                    <figcaption>United Colors of Benetton Cold Silver</figcaption>
-                    <p style="font-size: small;">Price ₱ 109.00 - 999.00</p>
-                    <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
-                    <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
-                        <span class="text">Add to Cart</span>
-                    </button>
-                </figure>
-                <br>
-                <figure>
-                    <img src="images/7.jpg" alt="Set 7" height="100">
-                    <figcaption>Adidas Ice Dive Eau De Toilette</figcaption>
-                    <p style="font-size: small;">Price ₱ 159.00 - 799.00</p>
-                    <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
-                    <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
-                        <span class="text">Add to Cart</span>
-                    </button>
-                </figure>
-                <br>
-                <figure>
-                    <img src="images/8.jpg" alt="Set 8" height="100">
-                    <figcaption>Dolce & Gabbana Light Blue Eau De Toilette</figcaption>
-                    <p style="font-size: small;">Price ₱ 580.00 - 7,500.00</p>
-                    <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
-                    <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
-                        <span class="text">Add to Cart</span>
-                    </button>
-                </figure>
-                <br>
-                <figure>
-                    <img src="images/9.jpg" alt="Set 9" height="100">
-                    <figcaption>Dior Miss Blooming Bouquet</figcaption>
-                    <p style="font-size: small;">Price ₱ 1,116.90 - 6,500.00</p>
-                    <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
-                    <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
-                        <span class="text">Add to Cart</span>
-                    </button>
+            <section id="companylogo">
+                <h3>&nbsp;Company Logo</h3>
+                <figure style="text-align: center;">
+                    <img src="images/logo.png" alt="Company Logo" height="200">
+                    <figcaption>My Official Shop Logo</figcaption>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Ynare’s Perfume Shop, established in the heart of Paris, has been “Magnetizing Moments” for over a century. Founded in 1920 by the visionary perfumer, Ynare, the brand is synonymous with luxury and elegance. The iconic logo, featuring a golden hibiscus flower, epitomizes the essence of beauty and allure that each fragrance encapsulates. Over the years, Ynare’s has curated an exquisite range of perfumes crafted from the finest ingredients sourced globally. Each scent tells a story of timeless romance, wild adventures or serene landscapes. The brand’s unwavering commitment to quality and innovation has cemented its reputation among connoisseurs of fine fragrances worldwide. Today, as we step into our centennial year, Ynare’s continues to be a beacon of sophistication and refinement in the world of perfumery.</p>
                 </figure>
             </section>
-
-            <section id="category" style="background-color: #76b5c5;">
-                <h3>Makeup and Cosmetics</h3>
-                <hr>
-                <figure>
-                    <img src="images/10.jpg" alt="Set 10" height="100">
-                    <figcaption>United Colors of Benetton Hot</figcaption>
-                    <p style="font-size: small;">Price ₱ 130.00 - 1,200.00</p>
-                    <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
-                    <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
-                        <span class="text">Add to Cart</span>
-                    </button>
-                </figure>
-                <br>
-                <figure>
-                    <img src="images/11.jpg" alt="Set 11" height="100">
-                    <figcaption>Custom printed black paper divider cardboard makeup gift packaging box for cosmetic product set</figcaption>
-                    <p style="font-size: small;">Price ₱84.17</p>
-                    <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
-                    <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
-                        <span class="text">Add to Cart</span>
-                    </button>
-                </figure>
-                <br>
-                <figure>
-                    <img src="images/12.jpg" alt="Set 12" height="100">
-                    <figcaption>Versace Bright Crystal Absolu</figcaption>
-                    <p style="font-size: small;">Price ₱ 100.00 - 8,767.12</p>
-                    <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
-                    <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
-                        <span class="text">Add to Cart</span>
-                    </button>
-                </figure>
-                <br>
-                <figure>
-                    <img src="images/13.jpg" alt="Set 13" height="100">
-                    <figcaption>Angel's Breath Eau De Cologne</figcaption>
-                    <p style="font-size: small;">Price ₱ 139.00 - 564.00</p>
-                    <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
-                    <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
-                        <span class="text">Add to Cart</span>
-                    </button>
+            <section id="owner">
+                <h3>&nbsp;Owner</h3>
+                <figure style="text-align: center;">
+                    <img src="images/owner.jpg" alt="Image of Owner" height="250">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;The visionary perfumer, Ynare, established Ynare’s Perfume Shop in the heart of Paris in 1920. The golden hibiscus flower in the logo is a testament to Ynare’s love for beauty and allure, which is encapsulated in each fragrance. Ynare’s passion for perfumery led to the curation of an exquisite range of perfumes crafted from the finest ingredients sourced globally. Each scent tells a story, be it of timeless romance, wild adventures, or serene landscapes. Ynare’s unwavering commitment to quality and innovation has cemented the brand’s reputation among connoisseurs of fine fragrances worldwide. As the company steps into its centennial year, Ynare’s legacy continues to be a beacon of sophistication and refinement in the world of perfumery. This is a testament to Ynare’s vision and dedication to the art of perfumery.</p>
                 </figure>
             </section>
-        </div>
-    </article>
-    <hr><article id="promos" style="text-align: center;">
-        <h2>PROMOS</h2>
-        <section>
+        </article>
+        <hr>
+        <article id="products" style="text-align: center;">
             <br>
-            <figure>
-                <h3>FREE SHIPPING</h3>
-                <img src="images/freeship.png" alt="Free Shipping Image" width="150">
-                <figcaption>FREE SHIPPING UP TO August 9</figcaption>
-                <p style="text-align: center; font-size: small;">
-                    Free Shipping for Orders Php 3,500.00 and Above up to August 9, 2024 Only!
-                </p>
-            </figure>
-            <br><br><br>
-            <figure>
-                <h3>DISCOUNT</h3>
-                <img src="images/discount.webp" alt="Discount Image" width="150">
-                <figcaption>25% OFF ON PURCHASES UP TO August 9</figcaption>
-                <p style="text-align: center; font-size: small;">
-                    Get a 25% Discount on your Next Purchases up to August 9, 2024 Only!
-                </p>
+            <h2>PRODUCTS</h2>
+            <div id="categorydiv" style="text-align: center;" st>
+                <section id="category">
+                    <h3>Skin Care Products</h3>
+                    <hr>
+                    <figure>
+                        <img src="images/1.jpg" alt="Set 1" height="100">
+                        <figcaption>Dior Sauvage Eau De Parfum</figcaption>
+                        <p style="font-size: small;">Price ₱ 1,687.00 - 14,000.00</p>
+                        <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
+                        <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
+                            <span class="text">Add to Cart</span>
+                        </button>
+                    </figure>
+                    <br>
+                    <figure>
+                        <img src="images/2.jpg" alt="Set 2" height="100">
+                        <figcaption>Versace Bright Crystal</figcaption>
+                        <p style="font-size: small;">Price ₱ 341.52 - 10,453.11</p>
+                        <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
+                        <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
+                            <span class="text">Add to Cart</span>
+                        </button>
+                    </figure>
+                    <br>
+                    <figure>
+                        <img src="images/3.jpg" alt="Set 3" height="100">
+                        <figcaption>Dolce & Gabbana Light Blue Intense Eau De Parfum</figcaption>
+                        <p style="font-size: small;">Price ₱ 650.00 - 8,000.00</p>
+                        <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
+                        <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
+                            <span class="text">Add to Cart</span>
+                        </button>
+                    </figure>
+                    <br>
+                    <figure>
+                        <img src="images/4.jpg" alt="Set 4" height="100">
+                        <figcaption>Victoria's Secret Bombshell Eau de Parfum</figcaption>
+                        <p style="font-size: small;">Price ₱ 192.03 - 16,964.00</p>
+                        <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
+                        <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
+                            <span class="text">Add to Cart</span>
+                        </button>
+                    </figure>
+                    <br>
+                    <figure>
+                        <img src="images/5.jpg" alt="Set 5" height="100">
+                        <figcaption>Chanel Allure Homme Sport</figcaption>
+                        <p style="font-size: small;">Price ₱ 114.00 - 17,528.00</p>
+                        <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
+                        <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
+                            <span class="text">Add to Cart</span>
+                        </button>
+                    </figure>
+                </section>
+    
+                <section id="category">
+                    <h3>Hair Care Products</h3>
+                    <hr>
+                    <figure>
+                        <img src="images/6.jpg" alt="Set 6" height="100">
+                        <figcaption>United Colors of Benetton Cold Silver</figcaption>
+                        <p style="font-size: small;">Price ₱ 109.00 - 999.00</p>
+                        <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
+                        <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
+                            <span class="text">Add to Cart</span>
+                        </button>
+                    </figure>
+                    <br>
+                    <figure>
+                        <img src="images/7.jpg" alt="Set 7" height="100">
+                        <figcaption>Adidas Ice Dive Eau De Toilette</figcaption>
+                        <p style="font-size: small;">Price ₱ 159.00 - 799.00</p>
+                        <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
+                        <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
+                            <span class="text">Add to Cart</span>
+                        </button>
+                    </figure>
+                    <br>
+                    <figure>
+                        <img src="images/8.jpg" alt="Set 8" height="100">
+                        <figcaption>Dolce & Gabbana Light Blue Eau De Toilette</figcaption>
+                        <p style="font-size: small;">Price ₱ 580.00 - 7,500.00</p>
+                        <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
+                        <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
+                            <span class="text">Add to Cart</span>
+                        </button>
+                    </figure>
+                    <br>
+                    <figure>
+                        <img src="images/9.jpg" alt="Set 9" height="100">
+                        <figcaption>Dior Miss Blooming Bouquet</figcaption>
+                        <p style="font-size: small;">Price ₱ 1,116.90 - 6,500.00</p>
+                        <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
+                        <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
+                            <span class="text">Add to Cart</span>
+                        </button>
+                    </figure>
+                </section>
+    
+                <section id="category">
+                    <h3>Makeup and Cosmetics</h3>
+                    <hr>
+                    <figure>
+                        <img src="images/10.jpg" alt="Set 10" height="100">
+                        <figcaption>United Colors of Benetton Hot</figcaption>
+                        <p style="font-size: small;">Price ₱ 130.00 - 1,200.00</p>
+                        <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
+                        <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
+                            <span class="text">Add to Cart</span>
+                        </button>
+                    </figure>
+                    <br>
+                    <figure>
+                        <img src="images/11.jpg" alt="Set 11" height="100">
+                        <figcaption>Custom printed black paper divider cardboard makeup gift packaging box for cosmetic product set</figcaption>
+                        <p style="font-size: small;">Price ₱84.17</p>
+                        <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
+                        <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
+                            <span class="text">Add to Cart</span>
+                        </button>
+                    </figure>
+                    <br>
+                    <figure>
+                        <img src="images/12.jpg" alt="Set 12" height="100">
+                        <figcaption>Versace Bright Crystal Absolu</figcaption>
+                        <p style="font-size: small;">Price ₱ 100.00 - 8,767.12</p>
+                        <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
+                        <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
+                            <span class="text">Add to Cart</span>
+                        </button>
+                    </figure>
+                    <br>
+                    <figure>
+                        <img src="images/13.jpg" alt="Set 13" height="100">
+                        <figcaption>Angel's Breath Eau De Cologne</figcaption>
+                        <p style="font-size: small;">Price ₱ 139.00 - 564.00</p>
+                        <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
+                        <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
+                            <span class="text">Add to Cart</span>
+                        </button>
+                    </figure>
+                </section>
+            </div>
+        </article>
+        <hr>
+        <article id="promos">
+            <h2>PROMOS</h2>
+            <section>
                 <br>
-            </figure>
-        </section>
-    </article>
+                <figure id="freeshipping">
+                    <h3>FREE SHIPPING</h3>
+                    <img src="images/freeship.png" alt="Free Shipping Image" width="150">
+                    <figcaption>FREE SHIPPING UP TO October 09</figcaption>
+                    <p style="text-align: center;">Free Shipping for Orders Php 5,000.00 and Above up to October 09, 2024 Only!</p>
+                </figure>
+                <br><br><br>
+                <figure id="discount">
+                    <h3>DISCOUNT</h3>
+                    <img src="images/discount.webp" alt="Discount Image" width="150">
+                    <figcaption>25% OFF ON PURCHASES UP TO October 09</figcaption>
+                    <p style="text-align: center;">Get a 25% Discount on your Next Purchases up to October 09, 2024 Only!</p>
+                    <br>
+                </figure>
+            </section>
+        </article>
+        <hr>
+        <article>
+            <h2>CONTACT US</h2>
+            <div id="contact">
+                <section style="text-align: center;">
+                    <h3><img src="images/gmail.png" alt="" height="15">GMAIL</h3>
+                    <figure>
+                        <p style="text-align: center;"><a href="mailto:hyangaresal19@gmail.com"><b>hyangaresal19@gmail.com</b></a></p>
+                    </figure>
+                </section>
+                <section>
+                    <h3><img src="images/call.png" alt="Call Image" width="15">CALL US</h3>
+                    <figure>
+                        <p style="text-align: center;">09987654321</p>
+                    </figure>
+                </section>
+                <section>
+                    <h3><img src="images/message.png" alt="Message" height="20">Message</h3>
+                        <form action="https://httpbin.org/get" method="get" target="_blank">
+                            <textarea name="messagebox" id="messagebox" cols="10" rows="2"></textarea><br>
+                            <button type="submit">Send</button>
+                        </form>
+                </section>
+            </div>
+        </article>
+    </main>
     <hr>
-    <article id="contact" style="text-align: center;">
-        <h2>CONTACT US</h2>
-        <div id="contactdiv" style="text-align: center;">
-            <section id="contact1">
-                <h3>GMAIL</h3>
-                <hr>
-                <figure>
-                    <img src="images/gmail.png" alt="GMAIL Image" width="200">
-                    <p style="text-align: center;"><a href="mailto:hyangaresal19@gmail.com">hyangaresal19@gmail.com</a></p>
-                </figure>
-            </section>
-            <section id="contact1">
-                <h3>CALL US</h3>
-                <hr>
-                <figure>
-                    <img src="images/call.png" alt="Call Image" width="150">
-                    <p style="text-align: center;">09987123654</p>
-                </figure>
-            </section>
-        </div>
-    </article>
-</main>
-<hr>
-<footer style="color: yellow;">
-    <p style="text-align: center;">All Rights Reserved &copy;<b>Ynah G. Salvana</b> 2024</p>
-    <p style="text-align: center; font-size: small;"><a href="#top">Back to Top</a></p>
-</footer>
+    <footer style="color: yellow;">
+        <p style="text-align: center;">All Rights Reserved &copy;<b>Ynah G. Salvana</b> 2024</p>
+        <p style="text-align: center; font-size: small;"><a href="#top">Back to Top</a></p>
+    </footer>
 </body>
 </html>
